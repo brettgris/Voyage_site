@@ -1,0 +1,30 @@
+/*
+	Theme Name: Voayge Creative
+	Theme URI: http://voyagecreative.com
+	Description: We're a creative studio providing high-quality digital services
+	Version: 1.0.1
+	Author: Brett Grisinger (@eaglesandcobras)
+	Author URI: http://voyagecreative.com
+	Tags: HTML5, CSS3, JQUERY, SASS, TLC
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+//------- IMAGE PATH -----//
+$imgPath:"img/";
+//------- IMAGE PATH -----//
+
+//------ BREAK POINTS ----//
+$b-large:1600px;
+//------ BREAK POINTS ----//
+
+/*------------------------------------*\
+    TYPOGRAPHY
+\*------------------------------------*/
+@import 'includes/fonts.scss';
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+@import 'includes/globals.scss';

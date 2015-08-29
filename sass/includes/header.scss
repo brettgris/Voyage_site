@@ -1,0 +1,164 @@
+#header{
+	width:1600px;
+	position:fixed;
+	overflow: hidden;
+	top:0px;
+	z-index: 50;
+	height:70px;
+	
+}
+
+.header-bar {
+    height:70px;
+	width:100%;
+	background: url(img/header_m.png) rgba(0,0,0, .75) repeat-x;
+	border-bottom:1px solid rgba(256,256,256, .1);
+	border-left:1px solid rgba(256,256,256, .1);
+	border-right:1px solid rgba(256,256,256, .1);
+	position: absolute;
+	-moz-box-shadow: 0px 0px 15px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,.5);
+	box-shadow: 0px 0px 15px rgba(0,0,0,.5);
+}
+
+.logo {
+	height:70px;
+	width:205px;
+	background: url(img/logo.png) rgba(256,256,256,.1) no-repeat center center;
+	border-right: 1px solid rgba(256,256,256,.15);
+	float:left;
+}
+
+.nav-bar a {
+	color: #fff;
+	float:left;
+	font-family: 'Avenir', Helvetica,Arial,Sans-Serif;
+	width:150px;
+	height:70px;
+	border-right: 1px solid rgba(256,256,256,.15);
+	font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 70px;
+}
+
+.nav-bar a:hover, .social a:hover{
+	background-color: rgba(256,256,256,.1);
+}
+
+.social a{
+	float:right;
+	width:70px;
+	height:70px;
+	border-left: 1px solid rgba(256,256,256,.15);
+}
+
+.fb_nav{
+	background: url(img/instagram.png) no-repeat center center;
+}
+
+.tw_nav{
+	background: url(img/tw_icon.png) no-repeat center center;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.mobile-menu a {
+	color:white;
+	width: 50px;
+	height:50px;
+	position: absolute;
+	right:15px;
+	border: 1px solid rgba(256,256,256,.15);
+	top:10px;
+	background: rgba(256,256,256,.1) no-repeat 15px center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.mobileclose{
+	background-image:url(img/menuclose.png) !important;
+	background-position: center center !important;
+}
+
+.mobile-menu a span {
+	display: block;
+	height: 3px;
+	width:25px;
+	background: white;
+	margin: 5px auto;
+}
+
+.mobile-menu a div {
+	padding-top: 12px;
+}
+
+.mobile-container{
+	height:180px;
+	position:fixed;
+	top:-180px;
+	display: none;
+	z-index: 50;
+	width:100%;
+}
+
+.mobile-container ul li{
+	width:100%;
+	height:60px;
+	text-align: left;
+}
+
+.mobile-link{
+	background: rgba(100,100,100,.9);
+	width:100%;
+	height:100%;
+	display: block;
+	color:white;
+	border-top:1px solid rgba(256,256,256,1);	
+	font-family:'Avenir', Helvetica,Arial,Sans-Serif;
+	font-size:14px;
+	font-weight: 300;
+	position: relative;
+}
+
+.mobile-link span{
+	display: block;
+	position: absolute;
+	width:100%;
+	top:20px;
+	left:65px;
+}
+
+.mobile-link:hover{
+	background: rgba(50,50,50,.95);
+}
+
+.nb{
+	border: none;
+}
+@media screen and (max-width : 1600px)  {
+	#header{
+		width:100%;
+		left:0;
+		margin-left: 0;
+	}
+}
+
+
+@media screen and (max-width : 959px)  {
+	/*.header-bar {
+		width: 100%;
+		left:0;
+		margin-left: 0;
+	}*/
+	
+	.nav-bar, .social {
+		display: none;
+	}
+	
+	.mobile-menu {
+		display: block;
+	}
+}

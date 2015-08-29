@@ -1,0 +1,298 @@
+.project-detail{
+    display:none;
+}
+
+.project-marquee {
+    height:450px;
+	background: #000 top center no-repeat;
+	position: relative;
+    overflow:hidden;
+	width:100%;
+	background-size: cover;
+}
+
+.marquee-image{
+	position: absolute;
+	z-index: 2;
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.project-container{
+	margin: 50px auto 100px auto;	
+}
+
+.desc-image{
+	text-align: center;
+	margin: 30px auto;
+}
+
+.projview-header{
+	position: absolute;
+	z-index: 2;
+	bottom:20px;
+	width:1470px;
+	left:50%;
+	margin-left: -735px;
+}
+
+.projview-ta{
+	width: 310px;
+	height:48px;
+	background: left center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.projview-title{
+	font-size:35px;
+	color:white;
+	font-family: 'Chalet', Helvetica,Arial,Sans-Serif;
+	letter-spacing: 2px;
+}
+
+.project-features{
+	height: 125px;
+	background: url(img/mooning.jpg) #e3e3e3;
+	border-bottom:1px solid #d6d6d6;
+}
+
+.project-paging{
+	background: url(img/mooning.jpg) #e3e3e3;
+	border-top:1px solid #d6d6d6;
+	padding-bottom: 50px;
+}
+
+.pj-features{
+	width:1470px;
+	margin:auto;
+	padding-top:20px;
+}
+
+.paging-container{
+	padding-top: 40px;
+}
+
+.pj-features h3{
+	font-size: 18px;
+	color:black;
+}
+
+.project-paging h3{
+	font-size: 18px;
+	color:black;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.pj-features p, .pj-right a {
+	font-size: 14px;
+	color: #333;
+}
+
+.pj-right a:hover {
+	color:#000;
+}
+
+.pj-left{
+	width:60%;
+	float: left;
+}
+
+.pj-right{
+	width:150px;
+	float: right;
+	text-align: center;
+}
+
+.paging-scroll-container{
+	width:100%;
+	height:400px;
+	overflow: hidden;
+}
+
+.paging-scroll{
+	width:100%;
+	height: 400px;
+}
+
+.projview-next{
+	width:25%;
+	height:400px;
+	background: black center center;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.projbtn-copy{
+	position: absolute;
+	background: rgba(0,0,0,.6);
+	width:100%;
+	height:100%;
+}
+
+.projview-next:hover .projbtn-copy{
+	background: -webkit-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6)); /* For Safari */
+	background: -o-linear-gradient(rgba(0,0,0,.2),  rgba(0,0,0,.6)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,.2),  rgba(0,0,0,.6)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(0,0,0,.2),  rgba(0,0,0,.6)); /* Standard syntax */
+}
+
+.projbtn-ta{
+	width:90%;
+	height:50px;
+	background:center center no-repeat;
+	background-size: contain;
+	margin: 125px auto 0 auto;
+	
+}
+
+.projbtn-title{
+	text-align: center;
+	font-family: 'Chalet', Helvetica,Arial,Sans-Serif;
+	font-size:36px;
+	font-weight: 500;
+	margin-top: 5px;
+	color:white;
+	letter-spacing: 2px;
+    text-transform:uppercase;
+}
+
+.projbtn-copy .view-project-btn {
+	position: relative;
+	margin: 10px auto 0 auto;
+}
+
+.close-project-btn {
+	width:200px;
+	height:50px;
+	border:1px solid black;
+	color:black;
+	margin: 50px auto 0 auto;
+	font-family: 'Chalet', Helvetica,Arial,Sans-Serif;
+	font-weight: 300;
+	font-size: 24px;
+	text-align: center;
+	line-height: 54px;
+	cursor: hand;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+
+.close-project-over {
+	color: white;
+	background: black;
+	top:50px;
+	position: absolute;
+	width:200px;
+	height:50px;
+	display: block;
+	left:0px;
+	
+	transition: top .1s ease-out;
+	-webkit-transition: top .1s ease-out;
+}
+
+.close-project-btn:hover .close-project-over{
+	top:0px;
+}
+
+@media screen and (max-width : 1599px) {
+	.projview-header {
+		width:1280px;
+		margin-left: -640px;
+	}
+	
+	.pj-features{
+		width:1280px;
+	}
+}
+
+@media screen and (max-width : 1279px) {
+	.projview-header {
+		width:960px;
+		margin-left: -480px;
+	}
+	.project-marquee {
+		height:400px;
+	}
+	.pj-features{
+		width:960px;
+	}
+	
+	.projview-next{
+		width:33.33%;
+	}
+}
+
+@media screen and (max-width : 959px)  {
+	.projview-header {
+		width:90%;
+		margin-left: -45%;
+	}
+	.project-marquee {
+		height:350px;
+	}
+	.pj-features{
+		width:90%;
+	}
+	
+	.pj-left, .pj-right{
+		float: none;
+		width:100%;
+		text-align: left;
+	}
+	
+	.pj-left{
+		margin-bottom: 20px;
+	}
+	
+	.pj-right{
+		margin-bottom: 20px;
+	}
+	
+	.project-features{
+		height: inherit;
+	}
+	
+	.projbtn-ta{
+		margin-top: 75px;
+		width: 75%;
+	}
+	
+	.projbtn-title{
+		font-size: 24px;
+	}
+	
+	.paging-scroll-container{
+		height:300px;
+	}
+	
+	.paging-scroll{
+		height:300px
+	}
+	
+	.projview-next{
+		height:300px;
+	}	
+}
+
+@media screen and (max-width : 480px) {
+	.pj-features p, .pj-right a {
+		font-size: 12px;
+		color: #666;
+	}
+	
+	.projview-next{
+		width:50%;
+	}
+}
+
+@media screen and (max-width : 350px) {
+
+}

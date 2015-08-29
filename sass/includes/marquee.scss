@@ -1,0 +1,209 @@
+#marquee {
+    height:650px;
+	background: #000;
+	position: relative;
+    overflow:hidden;
+}
+
+.marquee-slideshow {
+	position: absolute;
+	width:100%;
+}
+
+.marquee-gradient {
+	position: absolute;
+	width:100%;
+	height:650px;
+	background: url(img/gradient.png) no-repeat bottom center;
+	z-index: 1;
+	background-size: cover;
+}
+
+
+.marquee-item {
+	position: absolute;
+	width:100%;
+	height: 650px;
+	display: none;
+	background: top center no-repeat;
+	overflow: hidden;
+	background-size: cover;
+}
+
+.marquee-item:first-child {
+	display: block;
+}
+
+.voyage-headline-wrapper{
+	position: absolute;
+	bottom:120px;
+	z-index: 2;
+	width:960px;
+	left:50%;
+	margin-left: -480px;
+}
+
+.voyage-headline{
+	text-align: center;
+	font-size:96px;
+	line-height: 88px;
+	color:white;
+	font-family: 'Chalet', Helvetica,Arial,Sans-Serif;
+	letter-spacing: 2px;
+}
+
+.voyage-headline span {
+	overflow: hidden;
+	
+}
+
+.voyage-type {
+	font-weight: 300;
+	display: inline-block;
+}
+
+.voyage-voyage {
+	font-weight: bold;
+	display: inline-block;	
+}
+
+
+.voyage-copy {
+	color: #e6e6e6;
+	font-size:18px;
+	line-height: 24px;
+	font-family: 'Avenir', Helvetica,Arial,Sans-Serif;
+}
+
+#marquee .view-project-btn {
+	position: absolute;
+	left:50%;
+	margin-left: -100px;
+	bottom:50px;
+	z-index: 2;
+}
+
+.view-project-btn {
+	width:200px;
+	height:50px;
+	border:1px solid white;
+	color:white;
+	font-family: 'Chalet', Helvetica,Arial,Sans-Serif;
+	font-weight: 300;
+	font-size: 24px;
+	text-align: center;
+	line-height: 54px;
+	cursor: hand;
+	overflow: hidden;
+	display: block;
+}
+
+.view-project-over {
+	color: black;
+	background: white;
+	top:50px;
+	position: absolute;
+	width:200px;
+	height:50px;
+	display: block;
+	left:0px;
+	
+	transition: top .1s ease-out;
+	-webkit-transition: top .1s ease-out;
+}
+
+.view-project-btn:hover .view-project-over{
+	top:0px;
+}
+
+
+
+@media screen and (max-width : 1279px) {
+	.voyage-headline-wrapper{
+		bottom:100px;
+		width:850px;
+		margin-left: -425px;
+	}
+	
+	.voyage-header{
+		font-size:72px;
+		line-height: 68px;
+	}
+	
+	#marquee .view-project-btn{
+		bottom:30px;
+		width:180px;
+		height:45px;
+		font-size: 24px;
+		line-height: 48px;
+		margin-left: -90px;
+	}
+	
+	#marquee .view-project-over{
+		width:180px;
+		height:45px;
+	}
+	
+	.marquee-item, .marquee-gradient, #marquee {
+		height:550px;
+	}
+}
+
+@media screen and (max-width : 959px)  {
+	.voyage-headline-wrapper{
+		width:80%;
+		margin-left: -40%;
+		bottom:75px;
+	}
+	
+	.view-project-btn{
+		width:140px;
+		height:35px;
+		font-size: 18px;
+		line-height: 36px;
+	}
+	
+	#marquee .view-project-btn {
+		bottom:20px;
+		margin-left: -70px;
+		width:140px;
+		height:35px;
+		font-size: 18px;
+		line-height: 36px;
+	}
+	
+	.view-project-over{
+		width:140px;
+		height:35px;
+	}
+	
+	#marquee .view-project-over{
+		width:140px;
+		height:35px;
+	}
+	
+	.voyage-headline {
+		font-size:56px;
+		line-height: 50px;
+		width: 80%;
+		margin-left: 10%;
+	}
+	
+	.voyage-copy {
+		width:480px;
+		margin: auto;
+	}
+	
+	.marquee-item, .marquee-gradient, #marquee {
+		height:475px;
+	}
+}
+
+@media screen and (max-width : 480px) {
+	.voyage-copy{
+		font-size: 15px;
+		line-height: 20px;
+		width:100%;
+	
+	}
+}

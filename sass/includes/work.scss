@@ -1,0 +1,400 @@
+#work{
+    padding: 85px 0 0px 0;
+}
+
+.work-wrapper, .project-container{
+	width:1600px;
+	margin: 0 auto 50px auto;
+}
+
+.work-header, .projview-copy{
+	margin: auto;
+	width:960px;
+}
+
+.subsection{
+	margin-top: 50px;
+}
+
+.work-headline, .project-container h1{
+	font-family: 'Chalet', Helvetica,Arial,Sans-Serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.work-copy, .project-container p{
+	color: #363636;
+	font-size:18px;
+	line-height: 24px;
+	font-family: 'Avenir', Helvetica,Arial,Sans-Serif;	
+}
+
+.work-filter{
+	text-align: center;
+	margin-top: 30px;
+	font-family: 'Avenir', Helvetica,Arial,Sans-Serif;
+}
+
+.work-filter-headline {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.work-filter-types{
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+.work-filter-types a{
+	display: inline-block;
+	padding: 7px 10px;
+	border-radius:10px;
+	
+	border: 1px solid rgba(256,256,256,0);
+	
+	transition: border .3s ease-out, background .3s ease-out;
+	-webkit-transition: border .3s ease-out, background .3s ease-out;
+	
+}
+
+.work-filter-types a:hover, .work-filter-types .selected{
+	border: 1px solid #666;
+	background: #e6e6e6;
+}
+
+.project-list {
+}
+
+.project-item-over {
+	background: #e6e6e6 50% 50%;
+	height:350px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	/*border-bottom: 1px solid black;
+	border-top: 1px solid black;*/
+}
+
+.project-item-touch {
+	background: #e6e6e6 50% 50%;
+	height:450px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.project-item-over .project-overlay{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background: -webkit-linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)); /* For Safari */
+	background: -o-linear-gradient(rgba(0,0,0,.8),  rgba(0,0,0,.8)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,.8),  rgba(0,0,0,.8)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(0,0,0,.8),  rgba(0,0,0,.8)); /* Standard syntax */
+	
+	transition: background .2s ease-out;
+	-webkit-transition: background .2s ease-out;
+}
+
+.project-item-touch .project-overlay{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background: -webkit-linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.8)); /* For Safari */
+	background: -o-linear-gradient(rgba(0,0,0,.3),  rgba(0,0,0,.8)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,.3),  rgba(0,0,0,.8)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(0,0,0,.3),  rgba(0,0,0,.8)); /* Standard syntax */
+}
+
+.project-details {
+	width:1200px;
+	height:100%;
+	position: relative;
+	top:0;
+	left: 50%;
+	margin-left: -600px;
+}
+
+.project-item-over .project-right {
+	margin-top: 40px;
+	width:700px;
+	float:left;
+}
+
+.project-item-touch .project-right {
+	margin-top: 40px;
+	width:700px;
+	float:left;
+}
+
+.project-item-over .project-left {
+	margin-top: 40px;
+	width:700px;
+	float:right;
+}
+
+.project-item-touch .project-left {
+	margin-top: 40px;
+	width:700px;
+	float:right;
+}
+
+.project-image{
+	width: 100%;
+	height: 500px;
+	background: no-repeat center center;
+	background-size: contain;
+}
+
+.project-ta {
+	width:414px;
+	height:64px;
+	margin: auto;
+	background: no-repeat center center;
+	background-size: contain;
+}
+
+.project-item-touch .project-copy {
+	margin-top: 15px;
+	color: #e6e6e6;
+	font-size:18px;
+	line-height: 24px;
+	font-family: 'Avenir', Helvetica,Arial,Sans-Serif;
+}
+
+.project-item-over .project-copy {
+	margin-top: 30px;
+	color: #e6e6e6;
+	font-size:18px;
+	line-height: 24px;
+	font-family: 'Avenir', Helvetica,Arial,Sans-Serif;
+	display:none;
+}
+
+.project-title{
+	text-align: center;
+	font-family: 'Chalet', Helvetica,Arial,Sans-Serif;
+	font-size:36px;
+	font-weight: 500;
+	margin-top: 15px;
+	color:white;
+	letter-spacing: 2px;
+    text-transform:uppercase;
+}
+
+.project-item-over .view-project-btn{
+	position: relative;
+	margin: auto;
+	margin-top: 20px;
+	display: none;
+}
+
+.project-item-touch .view-project-btn{
+	position: relative;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.project-item-touch .details-left{
+	width:500px;
+	float: left;
+	margin-top: 80px;
+}
+
+.project-item-touch .details-right{
+	width:500px;
+	float: right;
+	margin-top: 80px;
+}
+
+.project-item-over .details-left{
+	width:500px;
+	float: left;
+	margin-top: 130px;
+	
+	transition: margin-top .2s ease-out;
+	-webkit-transition: margin-top .2s ease-out;
+}
+
+.project-item-over .details-right{
+	width:500px;
+	float: right;
+	margin-top: 130px;
+	
+	transition: margin-top .2s ease-out;
+	-webkit-transition: margin-top .2s ease-out;
+}
+
+.project-item-over:hover .details-right, .project-item-over:hover .details-left {
+	margin-top: 80px;
+}
+
+.project-item-over:hover .project-copy{
+	display: block;
+	margin-top: 15px;
+}
+
+.project-item-over:hover .view-project-btn{
+	display: block;
+}
+
+.project-item-over:hover{
+	/*height:450px;
+	margin-top: -50px;*/
+}
+
+.project-item-over:hover .project-overlay{
+	background: -webkit-linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.8)); /* For Safari */
+	background: -o-linear-gradient(rgba(0,0,0,.3),  rgba(0,0,0,.8)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,.3),  rgba(0,0,0,.8)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(0,0,0,.3),  rgba(0,0,0,.8)); /* Standard syntax */
+}
+
+.notmobile{
+	color:#666;
+	font-size: 11px;
+	display:none;
+}
+
+.nottablet{
+	color:#666;
+	font-size: 11px;
+	display:none;
+}
+
+
+@media screen and (max-width : 1599px) {
+	.work-wrapper, .project-container {
+		width:1280px;
+	}
+}
+
+@media screen and (max-width : 1279px) {
+	.work-wrapper, .project-container {
+		width:960px;
+	}
+	
+	.work-header, .projview-copy {
+		width:850px;
+	}
+	
+	.project-details {
+		width:960px;
+		margin-left: -480px;
+	}
+	
+	.project-item-list .project-right, .project-item-list .project-left {
+		width:600px;
+	}
+	
+	.project-item-list .details-left, .project-item-list .details-right {
+		width:360px;
+	}
+	
+	.project-ta {
+		width:300px;
+		height:47px;
+	}
+	
+	.project-item-touch .project-copy, .project-item-over .project-copy  {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	.project-item-list .view-project-btn, .project-item-list .view-project-over {
+		width:180px;
+		height:45px;
+		line-height: 48px;
+	}
+	
+	.project-title {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width : 1024px)  {
+	.shownottablet{
+		display: block;
+	}
+}	
+
+@media screen and (max-width : 959px)  {
+	.work-wrapper, .project-container {
+		width:90%;
+	}
+	
+	.project-details {
+		width:80%;
+		margin-left: -40%;
+	}
+    
+	.work-header, .projview-copy {
+		width:480px;
+	}
+	
+	.project-item-list .project-left, .project-item-list .project-right{
+		display: none;
+	}
+	.project-item-list .details-left, .project-item-list .details-right {
+		float:none;
+		margin-left: auto;
+		margin-right: auto;
+        width:480px;
+	}
+	
+	.project-item-list .view-project-btn, .project-item-list .view-project-over {
+		width:140px;
+		height:35px;
+		font-size: 18px;
+		line-height: 36px;
+	}
+}
+
+@media screen and (max-width : 480px) {
+	.work-header, .projview-copy {
+		width:100%;
+		
+	}
+    
+    .project-details {
+    	width:100%;
+		margin-left: -50%;
+	}
+	
+	.project-ta {
+		height:40px;
+	}
+	
+	.work-copy, .project-item-over .project-copy, .project-item-touch .project-copy, .project-container p {
+		font-size: 15px;
+		line-height: 20px;
+		
+	}
+	
+	.project-item-list .details-left, .project-item-list .details-right {
+		width:90%;
+	}
+	
+	.work-headline, .project-container h1 {
+		font-size: 28px;
+		line-height: 28px;
+	}
+	
+	.shownotmobile{
+		display: block;
+	}
+	
+	.shownottablet{
+		display: none;
+	}
+}
